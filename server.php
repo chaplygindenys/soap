@@ -22,7 +22,7 @@ function getStock($id){
 //создаем soap сервер
 
 $server = new SoapServer(
-    "https://chaplygindenys.github.io/soap/"///wsdl- язык описания веб служб на базе XML
+    "https://chaplygindenys.github.io/soap/stock.wsdl"///wsdl- язык описания веб служб на базе XML
 );   // документ описания службы что есть что нету что да как  расширение  документа .wsdl
 $server->addFunction("getStock");
 //запуск сервера
