@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <definitions name="Stock"
-             targetNamespace="http://localhost/soap"
-             xmlns:tns="http://localhost/soap"
+             targetNamespace="https://chaplygindenys.github.io/soap"
+             xmlns:tns="https://chaplygindenys.github.io/soap/"
              xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
              xmlns:soapenc="http://schemas.xmlsoap.org/encoding/"
@@ -25,7 +25,7 @@
   </binding>
 <service name="StockServise">
     <port name="StockPort" binding="StockBinding"><!--ищи элемент binding по имени"StockBinding"-->
-        <soap:address location="http://///server.php" />
+        <soap:address location="https://chaplygindenys.github.io/soap/server.php" />
     </port>
 </service>
 </definitions>
